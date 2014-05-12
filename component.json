@@ -1,0 +1,19 @@
+{
+  "name": "is-swf",
+  "version": "0.1.0",
+  "description": "Check if a Buffer/Uint8Array is a SWF file",
+  "license": "MIT",
+  "repository": "kevva/is-swf",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "keywords": [
+    "buffer",
+    "check",
+    "detect",
+    "swf",
+    "type",
+    "uint8array"
+  ]
+}
