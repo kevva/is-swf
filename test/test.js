@@ -1,18 +1,15 @@
-/*global describe, it */
 'use strict';
 
-var assert = require('assert');
 var isSwf = require('../');
 var path = require('path');
 var readChunk = require('read-chunk');
+var test = require('ava');
 
-describe('isSwf()', function () {
-    function check(file) {
-        return isSwf(readChunk.sync(file, 0, 3));
-    }
+test('should detect SWF from buffer', function (t) {
+    t.plan(2);
 
-    it('should detect SWF from buffer', function (cb) {
-        assert(check(path.join(__dirname, 'fixtures/test.swf')));
-        cb();
+    readChunk(path.join(__dirname, 'fixtures/test.swf'), 0, 3, function (err, buf) {
+        t.assert(!err);
+        t.assert(isSwf(buf));
     });
 });
