@@ -4,29 +4,20 @@
 
 ## Install
 
-```bash
+```sh
 $ npm install --save is-swf
-```
-
-```bash
-$ component install kevva/is-swf
-```
-
-```bash
-$ bower install --save is-swf
 ```
 
 ## Usage
 
 ```js
-var fs = require('fs');
 var isSwf = require('is-swf');
-var buf = fs.readFileSync('foo.swf');
+var read = require('fs').readFileSync;
 
-isSwf(buf);
+isSwf(read('foo.swf'));
 // => true
 ```
 
 ## License
 
-MIT © [Kevin Mårtensson](https://github.com/kevva)
+[MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Kevin Mårtensson](https://github.com/kevva)
