@@ -2,11 +2,13 @@
 
 > Check if a Buffer/Uint8Array is a SWF file
 
+
 ## Install
 
-```sh
+```
 $ npm install --save is-swf
 ```
+
 
 ## Usage
 
@@ -17,6 +19,7 @@ var read = require('fs').readFileSync;
 isSwf(read('foo.swf'));
 //=> true
 ```
+
 
 ## License
 
