@@ -1,9 +1,9 @@
 'use strict';
 
-var isSwf = require('../');
 var path = require('path');
 var readChunk = require('read-chunk');
 var test = require('ava');
+var isSwf = require('../');
 
 test('should detect SWF from buffer', function (t) {
 	t.plan(2);
