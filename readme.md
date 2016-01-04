@@ -13,11 +13,13 @@ $ npm install --save is-swf
 ## Usage
 
 ```js
-var read = require('fs').readFileSync;
-var isSwf = require('is-swf');
+const fs = require('fs');
+const isSwf = require('is-swf');
 
-isSwf(read('foo.swf'));
-//=> true
+fs.readFile('foo.swf', (err, data) => {
+	isSwf(data);
+	//=> true
+});
 ```
 
 
