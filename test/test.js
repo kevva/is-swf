@@ -1,15 +1,13 @@
-'use strict';
+import path from 'path';
+import pify from 'pify';
+import Promise from 'pinkie-promise';
+import readChunk from 'read-chunk';
+import test from 'ava';
+import fn from '../';
 
-var path = require('path');
-var readChunk = require('read-chunk');
-var test = require('ava');
-var isSwf = require('../');
+test(async t => {
+	const fixture = path.join(__dirname, 'fixtures/test.swf');
+	const buf = await pify(readChunk, Promise)(fixture, 0, 3);
 
-test('should detect SWF from buffer', function (t) {
-	t.plan(2);
-
-	readChunk(path.join(__dirname, 'fixtures/test.swf'), 0, 3, function (err, buf) {
-		t.assert(!err, err);
-		t.assert(isSwf(buf));
-	});
+	t.true(fn(buf));
 });
