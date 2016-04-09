@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (buf) {
-	if (!buf || buf.length < 2) {
+	if (!buf || buf.length < 3) {
 		return false;
 	}
 
