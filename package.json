@@ -1,36 +1,33 @@
 {
-  "name": "is-swf",
-  "version": "1.1.1",
-  "description": "Check if a Buffer/Uint8Array is a SWF file",
-  "license": "MIT",
-  "repository": "kevva/is-swf",
-  "author": {
-    "name": "Kevin Mårtensson",
-    "email": "kevinmartensson@gmail.com",
-    "url": "https://github.com/kevva"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "buffer",
-    "check",
-    "detect",
-    "swf",
-    "type",
-    "uint8array"
-  ],
-  "devDependencies": {
-    "ava": "*",
-    "pify": "^2.3.0",
-    "pinkie-promise": "^2.0.0",
-    "read-chunk": "^1.0.0",
-    "xo": "*"
-  }
+	"name": "is-swf",
+	"version": "1.1.1",
+	"description": "Check if a Buffer/Uint8Array is a SWF file",
+	"license": "MIT",
+	"repository": "kevva/is-swf",
+	"author": {
+		"name": "Kevin Mårtensson",
+		"email": "kevinmartensson@gmail.com",
+		"url": "https://github.com/kevva"
+	},
+	"engines": {
+		"node": ">=0.10.0"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"buffer",
+		"check",
+		"detect",
+		"swf",
+		"type",
+		"uint8array"
+	],
+	"devDependencies": {
+		"ava": "^0.17.0",
+		"xo": "^0.16.0"
+	}
 }

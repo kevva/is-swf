@@ -1,4 +1,4 @@
-# is-swf [![Build Status](http://img.shields.io/travis/kevva/is-swf/master.svg?style=flat)](https://travis-ci.org/kevva/is-swf)
+# is-swf [![Build Status](https://travis-ci.org/kevva/is-swf.svg?branch=master)](https://travis-ci.org/kevva/is-swf)
 
 > Check if a Buffer/Uint8Array is a SWF file
 
@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save is-swf
+$ npm install is-swf
 ```
 
 
@@ -16,10 +16,8 @@ $ npm install --save is-swf
 const fs = require('fs');
 const isSwf = require('is-swf');
 
-fs.readFile('foo.swf', (err, data) => {
-	isSwf(data);
-	//=> true
-});
+ifSwf(fs.readFileSync('foo.swf'));
+//=> true
 ```
 
 
