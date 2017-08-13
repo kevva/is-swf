@@ -1,5 +1,5 @@
 'use strict';
-module.exports = buf {
+module.exports = buf => {
 	if (!buf || buf.length < 3) {
 		return false;
 	}
